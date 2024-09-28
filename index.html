@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Better PES</title>
+
+
+</head>
+<body>
+    <div>   
+        <h1 style="font-family:'Times New Roman', Times, serif; color : gray; text-align : center; ">Better PES</h1>
+    </div>
+    <div>
+        <form style = "text-align : center; background : gray;" action = "https://formsubmit.co/aryansrivastava1004@gmail.com" method = "POST">
+            <div style = "padding-left : 725px; padding-right :725px; align-items: center;">
+            <label>Name:</label> 
+            <input type = "text" name = "userName" required><br><br>
+            <label>Email:</label>
+            <input type = "email" name = "userEmail" required><br><br>
+            <label>Phone:</label>
+            <input type = "tel" name = "phoneNumber"><br><br>
+            <label>Semester:</label>
+            <select >
+                <option value = "option1">1</option>
+                <option value = "option2">2</option>
+                <option value = "option3">3</option>
+                <option value = "option4">4</option>
+                <option value = "option5">5</option>
+                <option value = "option6">6</option>
+                <option value = "option7">7</option>
+                <option value = "option8">8</option>
+            </select><br><br>
+            <label>Age: </label><label id = "doodoo"></label><br><br>
+            <input type = "range" min="18" max = "60" step="1" value = "0"><br><br>
+
+            <script>
+                const age = document.querySelector('input[type="range"]');
+                const text1 = document.querySelector("#doodoo");
+                age.addEventListener("input", function(){
+                    text1.textContent = age.value;
+                });
+                text1.textContent = age.value;
+            </script>
+
+
+            <input type = "submit" style = "clear: both;">
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>
